@@ -4,24 +4,20 @@
     <meta charset="utf-8">
     <meta name="author" content="Curtis Cawley">
     <meta name="description" content="Puppr will find you a heckin' good boi to pet and play with in no time. No bamboozlin' about it!">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PUPPR - Find your good boi.</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Asul:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="scripts/app.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <h1>PUPPR</h1>
+    <h1 id="logo">PUPPR</h1>
 
-    <ul>Dogs:
-      <li class="list-item"></li>
-    </ul>
-    <section class="container">
-      <button id="axios">Get Dogs</button>
-    </section>
+    <div id="dog-cards"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
   </body>
 </html>
