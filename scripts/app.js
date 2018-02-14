@@ -1,8 +1,3 @@
-$(document).ready(function(){
-  $('select').select();
-});
-
-// let button = document.querySelector("button")
 axios.get("http://localhost:3000/dogs")
   .then(function(result) {
     renderDogs(result.data)
