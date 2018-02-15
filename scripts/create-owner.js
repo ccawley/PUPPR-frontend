@@ -15,10 +15,9 @@ form.addEventListener("submit", function(e) {
 
   createOwner(newOwner)
     .then(res => {
-      alert("NEW owNER!")
-      debugger
+      alert("Owner profile successfully created!")
       sessionStorage.setItem('userId', res.data.id)
-      window.location.replace("/index.html");
+      window.location.replace("/create-dog.html")
     })
     .catch(err => {
       console.log(err)
