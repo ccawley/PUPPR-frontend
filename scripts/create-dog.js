@@ -22,15 +22,12 @@ form.addEventListener("submit", function(e) {
     location,
     owner_id
   }
-  debugger
+
   createDog(newPuppr)
     .then(res => {
-      debugger
-      console.log('new puppr!')
       alert("NEW PUPPR!")
     })
     .catch(err => {
-      debugger
       console.log(err)
     })
 })
