@@ -26,7 +26,7 @@ form.addEventListener("submit", function(e) {
   createDog(newPuppr)
     .then(res => {
       alert("NEW puppr created successfully!")
-      window.location.replace("/index.html")
+      window.location.replace("/all-dogs-view.html")
     })
     .catch(err => {
       console.log(err)
