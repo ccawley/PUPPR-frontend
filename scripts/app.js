@@ -38,7 +38,13 @@ function renderDogs(data) {
     dogCard.style.background = `url(${data[i].picture_url})`
     dogCard.setAttribute('data-id', `${data[i].id}`)
     $(dogCard).addClass("dogCard")
-    dogCard.innerHTML = `<div>${data[i].name}</div>`
+    if (data[i].pet_me) {
+      dogCard.innerHTML = `<div>${data[i].name}</div>
+                           <div><i class="fas fa-paw petter"></i></div>`
+    } else {
+      dogCard.innerHTML = `<div>${data[i].name}</div>
+                           <div><i class="fas fa-paw avoider"></i></div>`
+    }
     let dogCards = document.querySelector("#dog-cards")
     dogCards.appendChild(dogCard)
   }
