@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Curtis Cawley">
+    <meta name="description" content="Puppr will find you a heckin' good boi to pet and play with in no time. No bamboozlin' about it!">
+    <title>PUPPR - Find your good boi.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1 id="logo">PUPPR</h1>
+
+    <div class="row">
+      <form id="create-petter" class="col s11">
+        <h5>Create Petter Profile!</h5>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="petter-name" type="text" class="validate">
+            <label for="name">Petter's Name: </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="petter-user_name" type="text" class="validate">
+            <label for="user_name">User name: </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="petter-password" type="text" class="validate">
+            <label for="password">password: </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button id="submitPetter" class="btn waves-effect waves-light" type="submit" name="action">Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="scripts/create-petter.js" charset="utf-8"></script>
+  </body>
+</html>
