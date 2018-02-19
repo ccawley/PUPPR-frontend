@@ -56,6 +56,24 @@ hr {
   border-bottom: 2px solid rgba(0,0,0,0.3)
 }
 
+#sign-up-owner {
+  margin-right: 5px;
+}
+
+#sign-up-petter {
+  margin-left: 5px;
+}
+
+#sign-in-owner {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#sign-in-petter {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
 .petter {
   color: lawngreen;
 }
