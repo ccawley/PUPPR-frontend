@@ -12,7 +12,6 @@ let dogDetails = document.querySelector('#dog-details')
 
 // Renders the page with a "mini-profile" for each dog in the database.
 function renderDogs(data) {
-  console.log(data)
   for(let i = 0; i < data.length; i++) {
     let dogCard = document.createElement("div")
     dogCard.style.background = `url(${data[i].picture_url})`
@@ -47,8 +46,45 @@ function renderDogDetail(e) {
   .then(function(result) {
     console.log(result.data)
     let details = document.createElement('div')
-    details.style.background = `url(${data.picture_url})`
-    details.innerHTML = result.data.name
+    //let photo = document.createElement('img')
+    //details.style.background = `url(${result.data.picture_url})`
+    if (result.data.pet_me) {
+      details.innerHTML = `<div class="row">
+                            <div class="col s12 m7">
+                              <div class="card">
+                                <div class="card-image">
+                                  <img src=${result.data.picture_url}>
+                                  <span class="card-title">${result.data.name}</span>
+                                </div>
+                                <div class="card-content">
+                                  <h5>About Puppr:</h5> <p>${result.data.about_puppr}</p>
+                                  <h5>Location:</h5>
+                                  <p>${result.data.location}</p>
+                                </div>
+                                <div class="card-action">
+                                  <a href=""/all-dogs-view.html"">Back</a>
+                                </div>
+                              </div>
+                            </div>
+                           </div>`
+    } else {
+      details.innerHTML = `<div class="row">
+                            <div class="col s12 m7">
+                              <div class="card">
+                                <div class="card-image">
+                                  <img src=${result.data.picture_url}>
+                                  <span class="card-title">${result.data.name}</span>
+                                </div>
+                                <div class="card-content">
+                                  <h5>About Puppr:</h5> <p>${result.data.about_puppr}</p>
+                                </div>
+                                <div class="card-action">
+                                  <a href=""/all-dogs-view.html"">Back</a>
+                                </div>
+                              </div>
+                            </div>
+                           </div>`
+    }
     let dogDetails = document.querySelector("#dog-details")
     dogDetails.appendChild(details)
   })
