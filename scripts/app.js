@@ -47,6 +47,7 @@ function renderDogDetail(e) {
   .then(function(result) {
     console.log(result.data)
     let details = document.createElement('div')
+    details.style.background = `url(${data.picture_url})`
     details.innerHTML = result.data.name
     let dogDetails = document.querySelector("#dog-details")
     dogDetails.appendChild(details)
