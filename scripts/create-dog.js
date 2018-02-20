@@ -12,7 +12,7 @@ form.addEventListener("submit", function(e) {
   let about_puppr = document.querySelector("#about_puppr").value
   let picture_url = document.querySelector("#picture_url").value
   let location = document.querySelector("#location").value
-  let owner_id = document.querySelector("#owner_id").value
+  let owner_id = sessionStorage.getItem("userId")
 
   let newPuppr = {
     name,
