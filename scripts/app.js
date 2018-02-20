@@ -87,6 +87,14 @@ function renderDogDetail(e) {
     }
     let dogDetails = document.querySelector("#dog-details")
     dogDetails.appendChild(details)
+
+    // if (sessionStorage.getItem("userId") == result.data.owner_id) {
+    //   let deleteButton = document.createElement("a")
+    //   deleteButton.className = "waves-effect waves-light btn amber accent-4"
+    //   deleteButton.innerHTML = "delete"
+    //   deleteButton.appendChild(details)
+    // }
+    
   })
   .catch(function() {
     alert("ERROR!")
