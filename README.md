@@ -4,9 +4,9 @@ PUPPR is a mobile first web app with the goal of connecting people looking to pe
 
 I also designed it with dog owners in mind. If you are a dog person, you know that you'll cross a busy street if you see a dog over there but there are sadly dogs who don't like to be pet by strangers. So this app helps solve that problem by allowing dog owners to upload their dogs profile & set the dogs to be listed as approachable or not. This shows up on the main view for the petters as a red paw on the dogs profile, giving them the clue that if they see that dog around they shouldn't just run up to it. Happy owners, happy petters & happy pupprs all around!
 
-### Deployed here: http://puppr.sh/
-#### Frontend GitHub: https://github.com/ccawley/puppr_frontend
-#### Backend GitHub: https://github.com/ccawley/puppr_backend
+### Deployed here: http://puppr.surge.sh/
+#### Frontend GitHub: https://github.com/ccawley/puppr-frontend
+#### Backend GitHub: https://github.com/ccawley/puppr-backend
 
 ## Features
 - Different signup process for dog owners vs dog petters.
@@ -36,7 +36,7 @@ I also designed it with dog owners in mind. If you are a dog person, you know th
 ![Splash Page](screenshots/puppr-splash.png)
 
 ### Owner sign up form:
-![Main Page](screenshots/puppr-create-owner.png)
+![Owner sign up](screenshots/puppr-create-owner.png)
 
 ### Owner add a puppr form:
-![Main Page](screenshots/puppr-create-pupper.png)
+![Add a puppr](screenshots/puppr-create-puppr.png)
